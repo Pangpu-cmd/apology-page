@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>认错系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="openModal" class="trigger-btn">我犯错了</button>
+
+    <div id="apologyModal" class="modal">
+        <div class="modal-content">
+            <div id="initialContent">
+                <h2>亲爱的，我错了</h2>
+                <p id="apologyText">请原谅我这次好吗？我保证不会再犯了！</p>
+                <div class="button-container">
+                    <button id="forgiveBtn" class="btn forgive">原谅</button>
+                    <button id="notForgiveBtn" class="btn not-forgive">不原谅</button>
+                </div>
+            </div>
+            <div id="pleadingContent" class="hidden">
+                <h2>求求你了 😢</h2>
+                <p id="pleadingText">我真的知道错了，没有你我的世界都不完整了...</p>
+                <button id="finalForgiveBtn" class="btn forgive final-btn">原谅我嘛</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="heartContainer" class="hidden">
+        <canvas id="heartCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
